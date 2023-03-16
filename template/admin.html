@@ -84,7 +84,7 @@
                             <tbody>
                                 {% for u in users %}
                                 <tr>
-                                    <th scope="row">{{ u.id }}</th>
+                                    <th scope="row">{{forloop.counter}}</th>
                                     <td>{{u.username}}</td>
                                     <td>{{ u.email }}</td>
                                     <td>{{ u.is_staff }}</td>
